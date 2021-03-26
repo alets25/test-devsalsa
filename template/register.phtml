@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../../vendor/twbs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../vendor/twbs/bootstrap/dist/js/bootstrap.js">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron mt-4">
+            <h1 class="display-4">Nuevo usuario</h1>
+            <p class="lead">Formulario para agregar a una nueva persona en base de datos</p>
+            <form id="FormNuevoUsuario" action="index.php?r=register&c=register/add" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input name="FormNuevoUsuario[email]" type="email" class="form-control" id="FormNuevoUsuario-email" placeholder="Correo electronico">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input name="FormNuevoUsuario[nombre]" type="text" class="form-control" id="FormNuevoUsuario-nombre" placeholder="Nombre completo">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <input name="FormNuevoUsuario[descripcion]" type="text" class="form-control" id="FormNuevoUsuario-descripcion" placeholder="Descripcion">
+                        </div>
+                    </div>
+                    <div class="col-lg-12" >
+                        <a class="btn btn-outline-danger float-left" href="index.php?r=home" rel="noopener noreferrer">Cancelar</a>
+                        <button class="btn btn-outline-info float-right" type="submit">Agregar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
