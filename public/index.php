@@ -13,10 +13,11 @@ try {
     if(isset($_GET['c'])){
         $params = explode("/",$_GET['c']);
         $clase = ucfirst($params[0]);
-        $clase = '\\classes\\'.$clase.'()';
-        $function = $params[1].'()';
+        $clase = '\\classes\\'.$clase;
+        $function = $params[1];
 
-        $f = new $clase;
+        $f = new $clase();
+        $f->$function($_POST);
     }
 
     if(isset($_GET['r'])){

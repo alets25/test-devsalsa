@@ -13,7 +13,28 @@
 
 <body>
     <div class="container">
-        
+        <div class="jumbotron mt-4">
+            <h1 class="display-4">Acceder</h1>
+            <p class="lead">Formulario para ingresar con la base de datos</p>
+            <form id="FormAcceder" action="index.php?r=login&c=register/login" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input name="FormAccederFormAcceder[email]" type="email" class="form-control" id="FormAcceder-email" placeholder="Correo electronico">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <input name="FormAccederFormAcceder[password]" type="email" class="form-control" id="FormAcceder-password" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div class="col-lg-12" >
+                        <a class="btn btn-outline-danger float-left" href="index.php?r=home" rel="noopener noreferrer">Cancelar</a>
+                        <button class="btn btn-outline-info float-right" type="submit">Acceder</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 
