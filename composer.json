@@ -1,0 +1,13 @@
+{
+    "name":"test/devsalsa",
+    "description": "test de devsalsa",
+    "authors": [
+        {
+            "name": "Alets",
+            "email": "alejandro.diaz.aviles@gmail.com"
+        }
+    ],
+    "require": {
+        "twbs/bootstrap": "4.0.0"
+    }
+}
