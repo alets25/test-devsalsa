@@ -17,7 +17,6 @@ try {
         $function = $params[1].'()';
 
         $f = new $clase;
-        var_dump($f);
     }
 
     if(isset($_GET['r'])){
