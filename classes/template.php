@@ -61,6 +61,6 @@ class Template
     {
         $url = $_SERVER['REQUEST_URI'];
         $home = $this->_setting['pageHome'];
-        header("Location:".$url."index.php?r=$home");
+        header("Location:".$url."/index.php?r=$home");
     }
 }

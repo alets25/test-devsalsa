@@ -11,4 +11,9 @@ class Register
     {
         
     }
+
+    public function login($data)
+    {
+        
+    }
 }
